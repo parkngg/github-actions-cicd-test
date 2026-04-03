@@ -1,5 +1,5 @@
-# 1. JDK 이미지를 베이스로 사용
-FROM openjdk:17-jdk-slim
+# 1. 베이스 이미지 지정
+FROM eclipse-temurin:17-jdk-jammy
 
 # 2. 애플리케이션 JAR 파일을 컨테이너로 복사
 ARG JAR_FILE=build/libs/*.jar
